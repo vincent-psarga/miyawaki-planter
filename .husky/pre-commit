@@ -1,3 +1,4 @@
 npx pretty-quick --staged
-npm test
+nx run-many -t lint
+nx run-many -t test
 npx @packmind/cli lint .
