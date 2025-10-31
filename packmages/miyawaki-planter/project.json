@@ -1,0 +1,20 @@
+{
+  "name": "miyawaki-planter",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packmages/miyawaki-planter/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packmages/miyawaki-planter",
+        "tsConfig": "packmages/miyawaki-planter/tsconfig.lib.json",
+        "packageJson": "packmages/miyawaki-planter/package.json",
+        "main": "packmages/miyawaki-planter/src/index.ts",
+        "assets": ["packmages/miyawaki-planter/*.md"]
+      }
+    }
+  }
+}
