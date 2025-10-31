@@ -29,5 +29,6 @@ jobs:
       - run: ./node_modules/.bin/nx run-many -t lint
       - run: ./node_modules/.bin/nx run-many -t test
       - name: Run packmind v3 linter
-        env: PACKMIND_API_KEY_V3=${{ secrets.PACKMIND_API_KEY_V3 }}
+        env:
+          PACKMIND_API_KEY_V3: ${{ secrets.PACKMIND_API_KEY_V3 }}
         run: ./node_modules/.bin/packmind-cli lint .
