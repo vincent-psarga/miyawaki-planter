@@ -18,6 +18,8 @@ jobs:
         node-version: [18.x, 20.x, 22.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
+    env: PACKMIND_API_KEY_V3=${{ secrets.PACKMIND_API_KEY_V3 }}
+
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
