@@ -12,10 +12,10 @@
     "quality-gate": "npm test"
   },
   "devDependencies": {
+    "@packmind/cli": "^0.2.12",
     "husky": "^9.1.7",
     "nx": "21.2.2",
     "prettier": "^3.6.2",
     "pretty-quick": "^4.2.2"
-  },
-  "dependencies": {}
+  }
 }
