@@ -6,3 +6,4 @@ Basic good practices when writing Typescript
       
 * Prefix interfaces with I
 * Prefix abstract classes with Abstract
+* Use Type for plain objects, Interface when implmentation is required
